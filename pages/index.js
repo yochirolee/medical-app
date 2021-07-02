@@ -20,7 +20,7 @@ export default function Home() {
             <div className="cards-container  px-2 grid grid-cols-2 gap-2">
               <div className="card flex flex-col items-center bg-gray-50 shadow-lg rounded-xl">
                 <div className="relative w-full">
-                  <i className="absolute las la-shield-alt text-2xl text-green-500 right-2 top-2"></i>
+                  <i className="absolute las la-check-circle text-2xl text-green-500 right-2 top-2"></i>
                 </div>
                 <img
                   src="images/doctor.jfif"
@@ -40,7 +40,7 @@ export default function Home() {
 
               <div className="card flex flex-col items-center bg-gray-50 shadow-lg rounded-xl">
                 <div className="relative w-full">
-                  <i className="absolute las la-shield-alt text-2xl text-green-500 right-2 top-2"></i>
+                  <i className="absolute las la-check-circle text-2xl text-green-500 right-2 top-2"></i>
                 </div>
                 <img
                   src="images/doctora.jfif"
@@ -57,6 +57,14 @@ export default function Home() {
                   <p>230</p>
                 </div>
               </div>
+            </div>
+            <div
+              name="bullets "
+              className="flex w-2/4 mx-auto mt-4 items-center justify-evenly"
+            >
+              <a className="h-3 w-3 bg-gray-600 rounded-full"></a>
+              <a className="h-3 w-3 border border-gray-600 rounded-full"></a>
+              <a className="h-3 w-3 border border-gray-600 rounded-full"></a>
             </div>
           </div>
         </div>
