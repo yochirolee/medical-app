@@ -1,65 +1,66 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import NavBar from "../components/navbar/navbar";
+import Layout from "../templates/layout";
+import SearchMainForm from "../components/forms/mainForm/searchMainForm";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <Layout>
+      <NavBar />
+      <section name="main-form">
+        <div className="container mx-auto  p-4">
+          <h1 className="text-xl font-bold text-gray-700">Programar Cita</h1>
+          <SearchMainForm />
         </div>
-      </main>
+      </section>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+      <section name="doctors-cards">
+        <div style={{ background: "url(svg/waves.svg) no-repeat  " }}>
+          <div name="cards-container" className="mx-4">
+            <h1 className="text-xl font-bold text-gray-700 mb-2">Doctores</h1>
+            <div className="cards-container  px-2 grid grid-cols-2 gap-2">
+              <div className="card flex flex-col items-center bg-gray-50 shadow-lg rounded-xl">
+                <div className="relative w-full">
+                  <i className="absolute las la-shield-alt text-2xl text-green-500 right-2 top-2"></i>
+                </div>
+                <img
+                  src="images/doctor.jfif"
+                  className="mt-4 object-cover h-40 w-32 rounded-full  shadow-lg"
+                />
+                <div className="flex mt-2">
+                  <span className="text-gray-500 font-bold mr-1">Dr</span>
+                  <h3>Juan Gomez</h3>
+                </div>
+
+                <p className="text-green-500">Pediatra</p>
+                <div className="flex items-center mb-2">
+                  <i className="las la-heart mr-2 text-red-500"></i>
+                  <p>230</p>
+                </div>
+              </div>
+
+              <div className="card flex flex-col items-center bg-gray-50 shadow-lg rounded-xl">
+                <div className="relative w-full">
+                  <i className="absolute las la-shield-alt text-2xl text-green-500 right-2 top-2"></i>
+                </div>
+                <img
+                  src="images/doctora.jfif"
+                  className="mt-4 object-cover h-40 w-32 rounded-full  shadow-lg"
+                />
+                <div className="flex mt-2">
+                  <span className="text-gray-500 font-bold mr-1">Dr</span>
+                  <h3>Esperanza Perez</h3>
+                </div>
+
+                <p className="text-green-500">Pediatra</p>
+                <div className="flex items-center mb-2">
+                  <i className="las la-heart mr-2 text-red-500"></i>
+                  <p>230</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
 }
