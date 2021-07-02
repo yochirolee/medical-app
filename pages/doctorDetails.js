@@ -1,10 +1,9 @@
-import NavBar from "../components/navbar/navbar";
 import Layout from "../templates/layout";
+import NavBar from "../components/navbar/navbar";
 import SearchMainForm from "../components/forms/mainForm/searchMainForm";
-import DoctorCard from "../components/cards/doctorCard";
-import Bullets from "../components/bullets/bullets";
+import DoctorCardDetails from "../components/cards/doctorCardDetails";
 
-export default function Home() {
+export default function DoctorDetails() {
   return (
     <Layout>
       <NavBar />
@@ -15,16 +14,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section name="doctors-cards">
+      <section name="doctors-cards-details">
         <div style={{ background: "url(svg/waves.svg) no-repeat  " }}>
           <div name="cards-container" className="mx-4">
-            <h1 className="text-xl font-bold text-gray-700 mb-2">Doctores</h1>
-            <div className="cards-container  px-2 grid grid-cols-2  gap-2">
-              <DoctorCard />
-              <DoctorCard />
-            </div>
-
-           <Bullets/>
+            <h1 className="text-xl font-bold text-gray-700 mb-2">Resultados de Busqueda</h1>
+            <DoctorCardDetails />
           </div>
         </div>
       </section>
