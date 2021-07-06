@@ -4,8 +4,8 @@ export default function SliderBullets({
   activeStep,
 }) {
   return (
-    <div className="lg:flex grid grid-cols-1 mt-10 relative place-items-end mr-10 md:mr-16  ">
-      <div className="slider-bullets lg:mx-auto  flex  w-20 lg:w-2/5 justify-between items-center">
+    <div className=" grid grid-cols-1 mt-10 relative place-items-end mr-10 md:mr-16  ">
+      <div className="slider-bullets   flex  w-20 lg:w-2/5 justify-between items-center">
         <i
           className="las la-angle-left hidden lg:block pr-2 cursor-pointer  text-gray-500 lg:text-2xl font-bold"
           onClick={() => handleActiveStep(activeStep - 1)}
