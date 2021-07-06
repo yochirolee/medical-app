@@ -33,7 +33,7 @@ export default function Home() {
         </section>
       </div>
 
-      <div className=" mx-auto container mt-6 h-screen  border  ">
+      <div className=" mx-auto container mt-6 h-screen    ">
         <div className="relative flex h-1/2    ">
           <Slider />
           <div className=" absolute w-1/3 right-4 top-20 ">
