@@ -23,14 +23,14 @@ export default function DoctorCardDetails() {
             <i className="la la-phone mr-2"></i>
             <p>(555) 555-5555</p>
           </div>
-          <div className="mt-3 flex ">
-            <button className="rounded-full h-8 flex items-center  p-2 px-4 bg-gray-700 text-white  font-bold hover:bg-gray-500 cursor-pointer">
+          <div className="mt-3 flex  ">
+            <button className="rounded-full h-8 flex items-center justify-end p-2 px-4 bg-gray-700 text-white  font-bold hover:bg-gray-500 cursor-pointer">
               Agendar Cita
             </button>
           </div>
         </div>
       </div>
-      <div className="flex w-full mt-3 justify-evenly">
+      <div className="flex w-full mt-3 justify-evenly ">
         <div className="flex items-center mb-2">
           <i className="las la-dollar-sign mr-2 text-green-500"></i>
           <p>230</p>
