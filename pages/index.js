@@ -33,15 +33,10 @@ export default function Home() {
         </section>
       </div>
 
-      <div>
-        <div
-          name="jumbo"
-          className="container flex mx-auto  border mt-10 rounded-xl p-10 bg-gray-100"
-        >
-          <div className="w-2/3">
-           <Slider/>
-          </div>
-          <div className="w-1/3">
+      <div className=" mx-auto container mt-6 h-screen  border  ">
+        <div className="relative flex h-1/2    ">
+          <Slider />
+          <div className=" absolute w-1/3 right-4 top-20 ">
             <SearchMainForm />
           </div>
         </div>

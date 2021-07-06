@@ -18,9 +18,12 @@ export default function Slider() {
   };
 
   return (
-    <div ref={sliderRefWidth} className="slider  overflow-x-hidden ">
+    <div
+      ref={sliderRefWidth}
+      className="slider  rounded-xl  overflow-x-hidden "
+    >
       <div
-        className="flex slick-list  transition duration-500 ease-in"
+        className="flex slick-list h-full transition duration-500 ease-in"
         style={{ transform: `translate3D(${value}px, 0px,0px)` }}
       >
         {sliderData.map((content) => (

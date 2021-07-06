@@ -1,7 +1,7 @@
 export default function SliderStep({ content }) {
   return (
     <div
-      className="slider min-w-full   flex flex-col justify-center     bg-no-repeat "
+      className="slider min-w-full    flex flex-col justify-center     bg-no-repeat "
       style={{
         backgroundImage: `url(${content.picture})`,
         repeat: "no-repeat",
