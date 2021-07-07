@@ -29,8 +29,12 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <div className="h-screen bg-gradient ">
-        <div className="container mx-auto pt-20 px-36 font-bold text-gray-500">
+      <div className="h-screen bg-gradient relative ">
+        <div
+          className="bg-local  bg-no-repeat absolute w-1/2  h-full bottom-0 right-0"
+          style={{ backgroundImage: "url(images/doctor.png)" }}
+        ></div>
+        <div className="container mx-auto  pt-20 px-36 font-bold text-gray-500 relative">
           <div name="main-text flex flex-col">
             <h1 className="text-4xl  w-2/4">
               Encuenta el doctor que necesitas con Guia Medica
@@ -58,6 +62,34 @@ export default function Home() {
               <div className="flex items-center justify-center w-14 h-12 rounded-full bg-green">
                 <i className="las la-search text-2xl text-white transform -rotate-90 "></i>
               </div>
+            </div>
+            <div
+              name="especialidades"
+              className=" flex items-center px-4 w-full h-12  rounded-full  bg-gray-600 bg-opacity-10 z-50 mt-20"
+            >
+              <ul className="flex w-full text-gray-700 justify-around  ">
+                <li>
+                  <a>Psicología</a>
+                </li>
+                <li>
+                  <a>Medicina General</a>
+                </li>
+                <li>
+                  <a>Ginecología</a>
+                </li>
+                <li>
+                  <a>Dermatología</a>
+                </li>
+                <li>
+                  <a>Pediatría</a>
+                </li>
+                <li>
+                  <a>Nutrición</a>
+                </li>
+                <li>
+                  <a>Neurología </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
