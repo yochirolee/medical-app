@@ -23,18 +23,20 @@ export default function Slider() {
       className="slider  rounded-xl  overflow-x-hidden "
     >
       <div
-        className="flex slick-list h-full transition duration-500 ease-in"
+        className="flex  h-full transition duration-500 ease-in"
         style={{ transform: `translate3D(${value}px, 0px,0px)` }}
       >
         {sliderData.map((content) => (
           <SliderStep key={content.id} content={content} />
         ))}
       </div>
-      <SliderBullets
-        bullets={sliderData}
-        handleActiveStep={handleActiveStep}
-        activeStep={activeStep}
-      />
+      <div className="mt-2">
+        <SliderBullets
+          bullets={sliderData}
+          handleActiveStep={handleActiveStep}
+          activeStep={activeStep}
+        />
+      </div>
     </div>
   );
 }

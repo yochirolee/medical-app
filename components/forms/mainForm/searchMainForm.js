@@ -1,6 +1,6 @@
 export default function SearchMainForm() {
   return (
-    <div className="   bg-gray-100 p-6 rounded-xl blur-sm">
+    <div className="   bg-gray-100 p-10 rounded-xl ">
       <form className="w-11/12 mx-auto">
         <div className="relative my-2">
           <i className="absolute las la-search text-2xl top-2 left-3 "></i>

@@ -4,7 +4,20 @@
 @tailwind utilities;
 
 .bg-green {
-  background: #1abc9c;
+  background-color: #01b1af;
+}
+
+.bg-green-secondary {
+  background-color: #c2eceb;
+}
+
+.bg-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(194, 236, 235, 1) 100%
+  );
 }
 .background {
   /* Rectangle 9 */
