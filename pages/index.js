@@ -44,7 +44,7 @@ export default function Home() {
               <span className="ml-2 text-green-400">(+555) 111-1111</span>
             </h5>
           </div>
-          <div name="main-search-container" className="ml-10">
+          <div name="main-search-container" className="ml-10 pt-10">
             <ul className="flex mb-4  w-2/4 justify-evenly uppercase mt-10">
               <li>
                 <a className="cursor-pointer hover:text-gray-400">
@@ -57,8 +57,21 @@ export default function Home() {
                 </a>
               </li>
             </ul>
-            <div className="w-4/6 pr-4 flex place-items-center rounded-full h-20 bg-green-400  bg-opacity-10">
-              <div className="h-12 flex  items-center  rounded-full bg-white w-full mx-5"></div>
+            <div className="w-10/12 pr-4 flex place-items-center rounded-full h-20 bg-green-400  bg-opacity-10">
+              <div className="h-12 flex px-4    items-center  rounded-full bg-white w-full mx-5">
+                <input
+                  placeholder="Nombre o Especialidad"
+                  className=" h-10 w-2/3 px-2 outline-none border-r"
+                ></input>
+                <input
+                  placeholder="Seguro (Opcional)"
+                  className=" h-10 px-2   outline-none border-r"
+                ></input>
+                <input
+                  placeholder="Ubicacion"
+                  className=" h-10 px-2   outline-none"
+                ></input>
+              </div>
               <div className="flex items-center justify-center w-14 h-12 rounded-full bg-green">
                 <i className="las la-search text-2xl text-white transform -rotate-90 "></i>
               </div>
